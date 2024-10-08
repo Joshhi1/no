@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.response-section {
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    min-height: 100px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.response-section p {
+    margin: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.typing-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-right: 4px;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.typing-indicator:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 15px 15px;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
